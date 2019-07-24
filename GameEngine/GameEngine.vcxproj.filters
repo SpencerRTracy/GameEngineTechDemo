@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Systems">
+      <UniqueIdentifier>{29c1293b-f894-4372-aea8-d04c494fbdc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\WindowsSystem">
+      <UniqueIdentifier>{9a364328-a079-4b5d-acb3-32c89cce130c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{62acf630-0199-4eb9-b9f9-b1d448f0506e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\GraphicsSystem">
+      <UniqueIdentifier>{1a4d90c3-b935-4230-9123-0e8ad20ecc6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineComponents">
+      <UniqueIdentifier>{909e8d58-7213-422e-abfa-169e436bcc00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineComponents\GameObject">
+      <UniqueIdentifier>{8e54d245-80f4-4432-b0bf-e0448c0248ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineComponents\GameObject\GameObjectModel">
+      <UniqueIdentifier>{9a0ad49d-03fe-4942-a7f6-d7f827687201}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineComponents\Utils">
+      <UniqueIdentifier>{34346684-317c-41de-9dd8-5a2ab61fca0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameLogic">
+      <UniqueIdentifier>{6f03cbe8-357a-4a82-9d88-a651919439a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineComponents\MainEngine">
+      <UniqueIdentifier>{72017e54-3c7d-48f2-b1d9-313b99a9f032}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineComponents\Component">
+      <UniqueIdentifier>{87810829-fffe-4e36-accb-67e26430ef81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineComponents\ObjectCreator">
+      <UniqueIdentifier>{768a996e-ce6a-4125-a74d-f07d99653b46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineComponents\EventManager">
+      <UniqueIdentifier>{276ad668-b58a-4218-8861-51d1b1d994da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineComponents\Physics">
+      <UniqueIdentifier>{4067ac7e-508e-497a-8745-2122dc4bad25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineComponents\InputManager">
+      <UniqueIdentifier>{b67844b9-8f39-458a-8959-639c7a46af04}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsSystem.cpp">
+      <Filter>Systems\WindowsSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsSystem.cpp">
+      <Filter>Systems\GraphicsSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectModel.cpp">
+      <Filter>EngineComponents\GameObject\GameObjectModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>EngineComponents\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Math2D.c">
+      <Filter>EngineComponents\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix2D.c">
+      <Filter>EngineComponents\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2D.c">
+      <Filter>EngineComponents\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic.cpp">
+      <Filter>GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="MainEngine.cpp">
+      <Filter>EngineComponents\MainEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="LineSegment2D.c">
+      <Filter>EngineComponents\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectCreator.cpp">
+      <Filter>EngineComponents\ObjectCreator</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager.cpp">
+      <Filter>EngineComponents\EventManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Message.cpp">
+      <Filter>EngineComponents\EventManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics.cpp">
+      <Filter>EngineComponents\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>EngineComponents\InputManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WindowsSystem.h">
+      <Filter>Systems\WindowsSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsSystem.h">
+      <Filter>Systems\GraphicsSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>EngineComponents\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectModel.h">
+      <Filter>EngineComponents\GameObject\GameObjectModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Math2D.h">
+      <Filter>EngineComponents\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix2D.h">
+      <Filter>EngineComponents\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2D.h">
+      <Filter>EngineComponents\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic.h">
+      <Filter>GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="MainEngine.h">
+      <Filter>EngineComponents\MainEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>EngineComponents\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="LineSegment2D.h">
+      <Filter>EngineComponents\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectCreator.h">
+      <Filter>EngineComponents\ObjectCreator</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManager.h">
+      <Filter>EngineComponents\EventManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Message.h">
+      <Filter>EngineComponents\EventManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics.h">
+      <Filter>EngineComponents\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>EngineComponents\InputManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

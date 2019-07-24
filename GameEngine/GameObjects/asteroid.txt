@@ -1,0 +1,6 @@
+Asteroid
+Asteroid
+-1.0,-1.0,50.0
+4.0,4.0
+0.0,0.0
+Circle
