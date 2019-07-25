@@ -46,6 +46,15 @@
     <Filter Include="EngineComponents\InputManager">
       <UniqueIdentifier>{b67844b9-8f39-458a-8959-639c7a46af04}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{1c3ea8ca-7c9c-4245-8304-7b46bd59b134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Textures">
+      <UniqueIdentifier>{ac542cef-8eb7-4dc1-884a-2df1d0c3e164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\GameObjects">
+      <UniqueIdentifier>{fc8a5b81-688e-4765-a941-3e3766c5618e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp">
@@ -146,5 +155,67 @@
     <ClInclude Include="InputManager.h">
       <Filter>EngineComponents\InputManager</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <_EmbedManagedResourceFile Include="Textures\Square.png">
+      <Filter>Resources\Textures</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="Textures\Missile.png">
+      <Filter>Resources\Textures</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="Textures\lava.png">
+      <Filter>Resources\Textures</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="Textures\ice.jpg">
+      <Filter>Resources\Textures</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="Textures\GalaxyBG.jpg">
+      <Filter>Resources\Textures</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="Textures\CircleOutline.png">
+      <Filter>Resources\Textures</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="Textures\Circle.png">
+      <Filter>Resources\Textures</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="Textures\SquareOutline.png">
+      <Filter>Resources\Textures</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="Textures\BrownScales.jpg">
+      <Filter>Resources\Textures</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="GameObjects\player.txt">
+      <Filter>Resources\GameObjects</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="GameObjects\missile.txt">
+      <Filter>Resources\GameObjects</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="GameObjects\fireasteroid.txt">
+      <Filter>Resources\GameObjects</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="GameObjects\enemy.txt">
+      <Filter>Resources\GameObjects</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="GameObjects\debugRect.txt">
+      <Filter>Resources\GameObjects</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="GameObjects\debugCirclePiece.txt">
+      <Filter>Resources\GameObjects</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="GameObjects\debugCircle.txt">
+      <Filter>Resources\GameObjects</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="GameObjects\bullet.txt">
+      <Filter>Resources\GameObjects</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="GameObjects\background.txt">
+      <Filter>Resources\GameObjects</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="GameObjects\asteroid.txt">
+      <Filter>Resources\GameObjects</Filter>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="GameObjects\TextDisplay.txt">
+      <Filter>Resources\GameObjects</Filter>
+    </_EmbedManagedResourceFile>
   </ItemGroup>
 </Project>

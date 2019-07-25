@@ -5,6 +5,10 @@
       <Configuration>Debug</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|Win32">
+      <Configuration>Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Win32">
       <Configuration>Release</Configuration>
       <Platform>Win32</Platform>
@@ -26,6 +30,12 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Final|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
@@ -33,6 +43,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Final|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
@@ -43,8 +56,16 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Releases\$(Configuration)\</OutDir>
+    <IntDir>bld\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -65,6 +86,21 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
@@ -104,6 +140,46 @@
     <ClInclude Include="Physics.h" />
     <ClInclude Include="Vector2D.h" />
     <ClInclude Include="WindowsSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <_EmbedManagedResourceFile Include="GameObjects\asteroid.txt" />
+    <_EmbedManagedResourceFile Include="GameObjects\background.txt" />
+    <_EmbedManagedResourceFile Include="GameObjects\bullet.txt" />
+    <_EmbedManagedResourceFile Include="GameObjects\debugCircle.txt" />
+    <_EmbedManagedResourceFile Include="GameObjects\debugCirclePiece.txt" />
+    <_EmbedManagedResourceFile Include="GameObjects\debugRect.txt" />
+    <_EmbedManagedResourceFile Include="GameObjects\enemy.txt" />
+    <_EmbedManagedResourceFile Include="GameObjects\fireasteroid.txt" />
+    <_EmbedManagedResourceFile Include="GameObjects\missile.txt" />
+    <_EmbedManagedResourceFile Include="GameObjects\player.txt" />
+    <_EmbedManagedResourceFile Include="GameObjects\TextDisplay.txt" />
+    <_EmbedManagedResourceFile Include="Textures\BrownScales.jpg">
+      <FileType>Document</FileType>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="Textures\Circle.png">
+      <FileType>Document</FileType>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="Textures\CircleOutline.png">
+      <FileType>Document</FileType>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="Textures\GalaxyBG.jpg">
+      <FileType>Document</FileType>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="Textures\ice.jpg">
+      <FileType>Document</FileType>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="Textures\lava.png">
+      <FileType>Document</FileType>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="Textures\Missile.png">
+      <FileType>Document</FileType>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="Textures\Square.png">
+      <FileType>Document</FileType>
+    </_EmbedManagedResourceFile>
+    <_EmbedManagedResourceFile Include="Textures\SquareOutline.png">
+      <FileType>Document</FileType>
+    </_EmbedManagedResourceFile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
