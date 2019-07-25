@@ -141,46 +141,6 @@
     <ClInclude Include="Vector2D.h" />
     <ClInclude Include="WindowsSystem.h" />
   </ItemGroup>
-  <ItemGroup>
-    <_EmbedManagedResourceFile Include="GameObjects\asteroid.txt" />
-    <_EmbedManagedResourceFile Include="GameObjects\background.txt" />
-    <_EmbedManagedResourceFile Include="GameObjects\bullet.txt" />
-    <_EmbedManagedResourceFile Include="GameObjects\debugCircle.txt" />
-    <_EmbedManagedResourceFile Include="GameObjects\debugCirclePiece.txt" />
-    <_EmbedManagedResourceFile Include="GameObjects\debugRect.txt" />
-    <_EmbedManagedResourceFile Include="GameObjects\enemy.txt" />
-    <_EmbedManagedResourceFile Include="GameObjects\fireasteroid.txt" />
-    <_EmbedManagedResourceFile Include="GameObjects\missile.txt" />
-    <_EmbedManagedResourceFile Include="GameObjects\player.txt" />
-    <_EmbedManagedResourceFile Include="GameObjects\TextDisplay.txt" />
-    <_EmbedManagedResourceFile Include="Textures\BrownScales.jpg">
-      <FileType>Document</FileType>
-    </_EmbedManagedResourceFile>
-    <_EmbedManagedResourceFile Include="Textures\Circle.png">
-      <FileType>Document</FileType>
-    </_EmbedManagedResourceFile>
-    <_EmbedManagedResourceFile Include="Textures\CircleOutline.png">
-      <FileType>Document</FileType>
-    </_EmbedManagedResourceFile>
-    <_EmbedManagedResourceFile Include="Textures\GalaxyBG.jpg">
-      <FileType>Document</FileType>
-    </_EmbedManagedResourceFile>
-    <_EmbedManagedResourceFile Include="Textures\ice.jpg">
-      <FileType>Document</FileType>
-    </_EmbedManagedResourceFile>
-    <_EmbedManagedResourceFile Include="Textures\lava.png">
-      <FileType>Document</FileType>
-    </_EmbedManagedResourceFile>
-    <_EmbedManagedResourceFile Include="Textures\Missile.png">
-      <FileType>Document</FileType>
-    </_EmbedManagedResourceFile>
-    <_EmbedManagedResourceFile Include="Textures\Square.png">
-      <FileType>Document</FileType>
-    </_EmbedManagedResourceFile>
-    <_EmbedManagedResourceFile Include="Textures\SquareOutline.png">
-      <FileType>Document</FileType>
-    </_EmbedManagedResourceFile>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
